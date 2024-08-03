@@ -1188,7 +1188,7 @@ void DrawTextPro(Font font, const char *text, Vector2 position, Vector2 origin, 
         rlRotatef(rotation, 0.0f, 0.0f, 1.0f);
         rlTranslatef(-origin.x, -origin.y, 0.0f);
 
-        DrawTextEx(font, text, (Vector2){ 0.0f, 0.0f }, fontSize, spacing, tint);
+        rlDrawTextEx(font, text, (Vector2){ 0.0f, 0.0f }, fontSize, spacing, tint);
 
     rlPopMatrix();
 }
