@@ -1134,7 +1134,7 @@ void rlDrawText(const char *text, int posX, int posY, int fontSize, Color color)
         if (fontSize < defaultFontSize) fontSize = defaultFontSize;
         int spacing = fontSize/defaultFontSize;
 
-        DrawTextEx(GetFontDefault(), text, position, (float)fontSize, (float)spacing, color);
+        rlDrawTextEx(GetFontDefault(), text, position, (float)fontSize, (float)spacing, color);
     }
 }
 
