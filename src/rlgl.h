@@ -1209,7 +1209,8 @@ void rlPopMatrix(void)
 }
 
 // Reset current matrix to identity matrix
-void rlLoadIdentity(void)
+
+void rlLoadIdentity()
 {
     *RLGL.State.currentMatrix = rlMatrixIdentity();
 }
